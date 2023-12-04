@@ -1,0 +1,31 @@
+.bar-container {
+    display: flex;
+    align-items: center;
+    margin: 15px auto;
+    width: 300px;
+}
+
+.range-label {
+    margin: 0 5px;
+    color: white;
+    font-weight: 400;
+    font-size: 25px;
+}
+
+.bar {
+    position: relative;
+    height: 20px;
+    width: 70px;
+    flex-grow: 1;
+    background-color: #9ee2ee;
+    border-radius: 25px;
+}
+
+.marker {
+    position: absolute;
+    height: 20px;
+    width: 10px;
+    background-color: #4396a5;
+    top: 0;
+    border-radius: 25px;
+}
