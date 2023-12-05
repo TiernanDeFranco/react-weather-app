@@ -18,9 +18,9 @@ const WeatherApp = () => {
 
     const [wIcon, setWIcon] = useState(partlyCloudyIcon);
 
-    const[minTemp, setMinTemp] = useState(50);
-    const [maxTemp, setMaxTemp] = useState(65);
-    const [temp, setTemp] = useState(55);
+    const[minTemp, setMinTemp] = useState(null);
+    const [maxTemp, setMaxTemp] = useState(null);
+    const [temp, setTemp] = useState(null);
 
     const search = async () => {
         const element = document.getElementsByClassName("cityInput");
@@ -119,8 +119,8 @@ const WeatherApp = () => {
                 </div>
                 <div className="weather-image">
                     <img src={wIcon} alt="" width={350} height={350}/>
-                    <div className="weather-temp">75°F</div>
-                    <div className="weather-location">Las Vegas</div>
+                    <div className="weather-temp"></div>
+                    <div className="weather-location"></div>
 
                    <TempRangeBar className="temprange" value={temp} start={minTemp} end={maxTemp}/>
 
@@ -128,14 +128,14 @@ const WeatherApp = () => {
                         <div className='element'>
                             <img src={humidIcon} alt='' className='icon' width={50} height={50}/>
                             <div className="data">
-                                <div className="humidity-percent">23%</div>
+                                <div className="humidity-percent">0%</div>
                                 <div className="text">Humidity</div>
                             </div>
                         </div>
                         <div className='element'>
                             <img src={windIcon} alt='' className='icon' width={50} height={50}/>
                             <div className="data">
-                                <div className="wind-speed">2mph</div>
+                                <div className="wind-speed">0 mph</div>
                                 <div className="text">Wind Speed</div>
                             </div>
                         </div>
